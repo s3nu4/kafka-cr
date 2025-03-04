@@ -8,21 +8,6 @@ spec:
   replicas: 1
   partitionCount: 1
   kafkaRestClassRef:
-    name: destination-kafka-rest
+    name: kafka-rest
   configs:
     cleanup.policy: "compact"
----
-apiVersion: platform.confluent.io/v1beta1
-kind: KafkaTopic
-metadata:
-  name: topic-new
-  namespace: kafka
-spec:
-  replicas: 1
-  partitionCount: 12
-  kafkaClusterRef:
-    name: kafka
-    namespace: kafka
-  configs:
-    cleanup.policy: "compact"
----
