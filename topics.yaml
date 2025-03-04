@@ -7,6 +7,6 @@ spec:
   replicas: 1
   partitionCount: 1
   kafkaRestClassRef:
-    name: source-kafka-rest
+    name: destination-kafka-rest
   configs:
     cleanup.policy: "compact"
