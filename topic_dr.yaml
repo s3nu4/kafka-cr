@@ -2,7 +2,7 @@
 apiVersion: platform.confluent.io/v1beta1
 kind: KafkaTopic
 metadata:
-  name: clink-topic-example-b08baf6f
+  name: topic-example
   namespace: kafka
 spec:
   replicas: 1
