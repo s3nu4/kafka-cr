@@ -9,5 +9,3 @@ spec:
   partitionCount: 1
   kafkaRestClassRef:
     name: kafka-rest
-  configs:
-    cleanup.policy: "compact"
