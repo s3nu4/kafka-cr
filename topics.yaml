@@ -42,3 +42,17 @@ spec:
   partitionCount: 1
   kafkaRestClassRef:
     name: kafka-rest
+---
+apiVersion: platform.confluent.io/v1beta1
+kind: KafkaTopic
+metadata:
+  name: demo-config-override
+  namespace: kafka
+spec:
+  replicas: 1
+  partitionCount: 1
+  configs:
+    confluent.key.schema.validation: true
+    confluent.value.schema.validation: true
+  kafkaRestClassRef:
+    name: kafka-rest
